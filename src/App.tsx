@@ -17,8 +17,11 @@ function App() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Link className="link" to="/play">
-              PLAY
+            <Link
+              className="link"
+              to={location.pathname === "/" ? "/play" : ""}
+            >
+              {location.pathname === "/" ? "PLAY" : "HOME"}
             </Link>
           </motion.button>
         </div>

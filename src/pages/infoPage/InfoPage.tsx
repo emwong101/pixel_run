@@ -18,6 +18,11 @@ function InfoPage() {
         transition={{ type: "spring", delay: 0.5 }}
         exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
       >
+        <div className="blue-bar">
+          {" "}
+          <p className="bar__label">Pixel Run</p>
+          <input type="button" value="X" className="close"></input>
+        </div>
         <h2 className="info__tagline">
           Pixel Run is an arcade style, endless sidescroller inspired by
           traditional HTML browser games.
@@ -30,6 +35,10 @@ function InfoPage() {
         transition={{ type: "spring", delay: 1.5 }}
         exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
       >
+        <div className="blue-bar">
+          <p className="bar__label">Pixel Run</p>
+          <input type="button" value="X" className="close"></input>
+        </div>
         <h2 className="about">About Me</h2>
         <h4 className="about__body">
           I am a former legal assistant and policy researcher. After spending a
@@ -54,6 +63,11 @@ function InfoPage() {
         transition={{ type: "spring", delay: 2.5 }}
         exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
       >
+        <div className="blue-bar">
+          {" "}
+          <p className="bar__label">Pixel Run</p>
+          <input type="button" value="X" className="close"></input>
+        </div>
         <h2 className="info__tagline">
           The game was built using Phaser JS v.3, Typescript, Javascript, Axios,
           React, Framer Motion, Firebase, and MatterJS.
