@@ -1,12 +1,8 @@
 import "./InfoPage.scss";
-import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
-import TS from "/assets/typescript.svg";
-import JS from "/assets/javascript.png";
-import Phaser from "/assets/phaser.png";
-import matterjs from "/assets/matterjs.png";
-import react from "/assets/react.png";
-import framer from "/assets/framer.png";
+
+import react from "react";
 
 function InfoPage() {
   return (
@@ -87,12 +83,12 @@ function InfoPage() {
           React, Framer Motion, Firebase, and MatterJS.
         </h2>
         <div>
-          <img src={TS} alt="typescript" className="logo" />
-          <img src={JS} alt="" className="logo" />
-          <img src={Phaser} alt="" className="logo" />
-          <img src={react} alt="" className="logo" />
-          <img src={matterjs} alt="" className="logo" />
-          <img src={framer} className="logo" />
+          <img src="assets/typescript.svg" alt="typescript" className="logo" />
+          <img src="assets/javascript.png" alt="" className="logo" />
+          <img src="assets/phaser.png" alt="" className="logo" />
+          <img src="assets/react.png" alt="" className="logo" />
+          <img src="assets/matterjs.png" alt="" className="logo" />
+          <img src="assets/framer.png" className="logo" />
         </div>
       </motion.div>
     </>

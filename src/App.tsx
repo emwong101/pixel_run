@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className="header-container">
-        <img src="/assets/title.png" alt="title" className="header" />
+        <img src="assets/title.png" alt="title" className="header" />
         <div className="button">
           <motion.button
             className="link-button"
