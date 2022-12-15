@@ -37,7 +37,7 @@ function InfoPage() {
             <img
               className="caution"
               alt="caution symbol"
-              src="/assets/caution.png"
+              src="assets/caution.png"
             ></img>
           </div>
           <div className="about__text-div">
@@ -79,12 +79,12 @@ function InfoPage() {
           React, Framer Motion, Firebase, and MatterJS.
         </h2>
         <div>
-          <img src="/assets/typescript.svg" alt="typescript" className="logo" />
-          <img src="/assets/javascript.png" alt="" className="logo" />
-          <img src="/assets/phaser.png" alt="" className="logo" />
-          <img src="/assets/react.png" alt="" className="logo" />
-          <img src="/assets/matterjs.png" alt="" className="logo" />
-          <img src="/assets/framer.png" className="logo" />
+          <img src="assets/typescript.svg" alt="typescript" className="logo" />
+          <img src="assets/javascript.png" alt="" className="logo" />
+          <img src="assets/phaser.png" alt="" className="logo" />
+          <img src="assets/react.png" alt="" className="logo" />
+          <img src="assets/matterjs.png" alt="" className="logo" />
+          <img src="assets/framer.png" className="logo" />
         </div>
       </motion.div>
     </>

@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div className="header-container" onClick={handleClick}>
-        <img src="/assets/title.png" alt="title" className="header" />
+        <img src="assets/title.png" alt="title" className="header" />
         <div className="button">
           <Link className="link" to={location.pathname === "/" ? "/play" : ""}>
             <motion.button
