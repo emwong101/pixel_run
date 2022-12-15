@@ -1,5 +1,6 @@
 import "./GamePage.scss";
 import { motion } from "framer-motion";
+import BlueBar from "../../components/blueBar/BlueBar";
 
 function GamePage() {
   return (
@@ -10,10 +11,11 @@ function GamePage() {
       transition={{ type: "spring", delay: 0.8 }}
       exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
     >
-      <div className="blue-bar blue-bar__game">
-        <p className="bar__label">Pixel Run</p>
-        <input type="button" value="X" className="close close__game"></input>
-      </div>
+      <BlueBar
+        classes="blue-bar__game"
+        close="close__game"
+        icon="close__icon--game"
+      />
       <iframe
         src="https://itch.io/embed-upload/6992900?color=c0c0c0"
         width="960"

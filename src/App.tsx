@@ -18,7 +18,7 @@ function App() {
     <>
       <div className="header-container" onClick={handleClick}>
         <img src="assets/title.png" alt="title" className="header" />
-        <div className="button">
+        <div className="button-container">
           <Link to="/contact">
             <img
               src="assets/phone-solid.svg"
@@ -44,6 +44,7 @@ function App() {
           <Routes location={location} key={location.pathname}>
             {active && <Route path="/" element={<InfoPage />} />}
             <Route path="/play" element={<GamePage />} />
+            <Route path="/pixel_run" element={<Navigate to="/" />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>
