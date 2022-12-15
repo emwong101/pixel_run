@@ -37,7 +37,7 @@ function InfoPage() {
             <img
               className="caution"
               alt="caution symbol"
-              src="/pixel_run/assets/caution.png"
+              src="/assets/caution.png"
             ></img>
           </div>
           <div className="about__text-div">
@@ -71,7 +71,6 @@ function InfoPage() {
         exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
       >
         <div className="blue-bar">
-          {" "}
           <p className="bar__label">Pixel Run</p>
           <input type="button" value="X" className="close"></input>
         </div>
@@ -80,16 +79,12 @@ function InfoPage() {
           React, Framer Motion, Firebase, and MatterJS.
         </h2>
         <div>
-          <img
-            src="/pixel_run/assets/typescript.svg"
-            alt="typescript"
-            className="logo"
-          />
-          <img src="/pixel_run/assets/javascript.png" alt="" className="logo" />
-          <img src="/pixel_run/assets/phaser.png" alt="" className="logo" />
-          <img src="/pixel_run/assets/react.png" alt="" className="logo" />
-          <img src="/pixel_run/assets/matterjs.png" alt="" className="logo" />
-          <img src="/pixel_run/assets/framer.png" className="logo" />
+          <img src="/assets/typescript.svg" alt="typescript" className="logo" />
+          <img src="/assets/javascript.png" alt="" className="logo" />
+          <img src="/assets/phaser.png" alt="" className="logo" />
+          <img src="/assets/react.png" alt="" className="logo" />
+          <img src="/assets/matterjs.png" alt="" className="logo" />
+          <img src="/assets/framer.png" className="logo" />
         </div>
       </motion.div>
     </>
