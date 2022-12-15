@@ -15,13 +15,12 @@ function GamePage() {
         <input type="button" value="X" className="close close__game"></input>
       </div>
       <iframe
-        className="game"
         src="https://itch.io/embed-upload/6992900?color=c0c0c0"
         width="960"
         height="680"
       >
-        <a href="https://emilywongg.itch.io/pixel-runner">
-          Play Pixel Runner on itch.io
+        <a href="https://emilywongg.itch.io/pixel-run">
+          Play Pixel Run on itch.io
         </a>
       </iframe>
     </motion.div>
