@@ -1,7 +1,7 @@
 import "./App.scss";
 import GamePage from "./pages/gamePage/GamePage";
 import InfoPage from "./pages/infoPage/InfoPage";
-import { Routes, Route, useLocation, Link } from "react-router-dom";
+import { Routes, Route, useLocation, Link, Navigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className="header-container">
-        <img src="assets/title.png" alt="title" className="header" />
+        <img src="/assets/title.png" alt="title" className="header" />
         <div className="button">
           <motion.button
             className="link-button"
@@ -30,7 +30,8 @@ function App() {
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<InfoPage />} />
-            <Route path="play" element={<GamePage />} />
+            <Route path="/pixel_run/play" element={<GamePage />} />
+            <Route path="/pixel_run" element={<Navigate to="/" />} />
           </Routes>
         </AnimatePresence>
       </div>
