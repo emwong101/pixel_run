@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://emwong101.github.io/pixel_run/",
+  "homepage": "https://emwong101.github.io/pixel_run",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
