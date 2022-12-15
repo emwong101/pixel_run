@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className="header-container">
-        <img src="pixel_run/assets/title.png" alt="title" className="header" />
+        <img src="/pixel_run/assets/title.png" alt="title" className="header" />
         <div className="button">
           <motion.button
             className="link-button"
@@ -30,7 +30,7 @@ function App() {
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Navigate to="/pixel-run" />} />
-            <Route path="/play" element={<GamePage />} />
+            <Route path="/pixel_run/play" element={<GamePage />} />
             <Route path="/pixel_run" element={<InfoPage />} />
           </Routes>
         </AnimatePresence>
