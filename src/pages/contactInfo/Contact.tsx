@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Contact.scss";
+import BlueBar from "../../components/blueBar/BlueBar";
 
 function Contact() {
   return (
@@ -12,10 +13,7 @@ function Contact() {
         transition={{ type: "spring", delay: 0.5 }}
         exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
       >
-        <div className="blue-bar">
-          <p className="bar__label">Pixel Run</p>
-          <input type="button" value="X" className="close"></input>
-        </div>
+        <BlueBar classes="" close="" icon="" />
         <div className="about__wrapper">
           <div className="about__symbol contact__symbol">
             <img
