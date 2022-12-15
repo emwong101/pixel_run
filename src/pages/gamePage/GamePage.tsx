@@ -11,7 +11,7 @@ function GamePage() {
       exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
     >
       <iframe
-        src="https://itch.io/embed-upload/6992900?color=333333"
+        src="https://itch.io/embed-upload/6992900?color=c0c0c0"
         width="960"
         height="680"
       >
