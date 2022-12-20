@@ -32,7 +32,7 @@ function InfoPage() {
         className="main second"
         initial={{ x: "100vw" }}
         animate={{ x: 0 }}
-        transition={{ type: "spring", delay: 1.5 }}
+        transition={{ type: "spring", delay: 0.75 }}
         exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
       >
         <BlueBar classes="" close="" icon="" />
@@ -41,7 +41,7 @@ function InfoPage() {
             <img
               className="caution"
               alt="caution symbol"
-              src="assets/caution.png"
+              src="./assets/caution.png"
             ></img>
           </div>
           <div className="about__text-div">
@@ -71,7 +71,7 @@ function InfoPage() {
         className="main third"
         initial={{ x: "100vw" }}
         animate={{ x: 0 }}
-        transition={{ type: "spring", delay: 2.5 }}
+        transition={{ type: "spring", delay: 1 }}
         exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
       >
         <BlueBar classes="" close="" icon="" />

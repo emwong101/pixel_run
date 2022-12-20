@@ -26,14 +26,17 @@ function App() {
               alt="phone"
             />
           </Link>
-          <Link className="link" to={location.pathname === "/" ? "/play" : ""}>
+          <Link
+            className="link"
+            to={location.pathname === "/pixel_run/" ? "/play" : ""}
+          >
             <motion.button
               className="link-button"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
               <p className="button__text">
-                {location.pathname === "/" ? "PLAY" : "HOME"}
+                {location.pathname === "/pixel_run/" ? "PLAY" : "HOME"}
               </p>
             </motion.button>
           </Link>
@@ -42,9 +45,9 @@ function App() {
       <div>
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
-            {active && <Route path="/" element={<InfoPage />} />}
+            <Route path="/pixel_run" element={<InfoPage />} />
+            <Route path="/" element={<Navigate to="/pixel_run/" />} />
             <Route path="/play" element={<GamePage />} />
-            <Route path="/pixel_run" element={<Navigate to="/" />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>

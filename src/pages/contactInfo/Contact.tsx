@@ -19,7 +19,7 @@ function Contact() {
             <img
               className="caution"
               alt="caution symbol"
-              src="assets/caution.png"
+              src="pixel_run/assets/caution.png"
             ></img>
           </div>
           <div className="about__text-div">
