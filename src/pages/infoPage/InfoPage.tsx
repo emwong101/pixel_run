@@ -7,7 +7,7 @@ import BlueBar from "../../components/blueBar/BlueBar";
 function InfoPage() {
   let text = `${(<span className="button__outline">OK</span>)}`;
   return (
-    <>
+    <div className="info__page">
       <motion.div
         className="main"
         initial={{ x: "100vw" }}
@@ -60,8 +60,15 @@ function InfoPage() {
                 improvements will be applied before formal website deployment
               </li>
               <li className="about__body">
-                Assets found on <a href="opengameart.org">opengameart.org</a> or
-                original designs
+                Assets found on{" "}
+                <a
+                  className="info__link"
+                  target="_blank"
+                  href="https://opengameart.org/"
+                >
+                  opengameart.org
+                </a>{" "}
+                or original designs
               </li>
             </ul>
           </div>
@@ -79,7 +86,7 @@ function InfoPage() {
           The game was built using Phaser JS v.3, Typescript, Javascript, Axios,
           React, Framer Motion, Firebase, and MatterJS.
         </h2>
-        <div>
+        <div className="logo__div">
           <img src="assets/typescript.svg" alt="typescript" className="logo" />
           <img src="assets/javascript.png" alt="" className="logo" />
           <img src="assets/phaser.png" alt="" className="logo" />
@@ -88,7 +95,7 @@ function InfoPage() {
           <img src="assets/framer.png" className="logo" />
         </div>
       </motion.div>
-    </>
+    </div>
   );
 }
 

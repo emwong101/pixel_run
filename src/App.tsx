@@ -16,10 +16,10 @@ function App() {
   };
   return (
     <>
-      <div className="header-container" onClick={handleClick}>
+      <div className="header-container">
         <img src="assets/title.png" alt="title" className="header" />
         <div className="button-container">
-          <Link to="/contact">
+          <Link to="/pixel_run/contact">
             <img
               src="assets/phone-solid.svg"
               className="phone__icon"
@@ -28,7 +28,7 @@ function App() {
           </Link>
           <Link
             className="link"
-            to={location.pathname === "/pixel_run/" ? "/play" : ""}
+            to={location.pathname === "/pixel_run/" ? "/pixel_run/play" : ""}
           >
             <motion.button
               className="link-button"
@@ -47,8 +47,8 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/pixel_run" element={<InfoPage />} />
             <Route path="/" element={<Navigate to="/pixel_run/" />} />
-            <Route path="/play" element={<GamePage />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/pixel_run/play" element={<GamePage />} />
+            <Route path="/pixel_run/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>
       </div>

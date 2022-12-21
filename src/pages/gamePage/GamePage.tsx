@@ -8,7 +8,7 @@ function GamePage() {
       className="game-container"
       initial={{ x: "100vw" }}
       animate={{ x: 0 }}
-      transition={{ type: "spring", delay: 0.8 }}
+      transition={{ type: "spring", delay: 0.5 }}
       exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
     >
       <BlueBar

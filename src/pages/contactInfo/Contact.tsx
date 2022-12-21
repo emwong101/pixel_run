@@ -5,7 +5,7 @@ import BlueBar from "../../components/blueBar/BlueBar";
 
 function Contact() {
   return (
-    <div>
+    <div className="contact__page">
       <motion.div
         className="contact"
         initial={{ x: "100vw" }}
@@ -17,20 +17,34 @@ function Contact() {
         <div className="about__wrapper">
           <div className="about__symbol contact__symbol">
             <img
-              className="caution"
+              className="caution contact__caution"
               alt="caution symbol"
-              src="pixel_run/assets/caution.png"
+              src="assets/caution.png"
             ></img>
           </div>
           <div className="about__text-div">
-            <h5 className="contact__link">
+            <a
+              target="_blank"
+              href="https://emilywongg.itch.io/pixel-run"
+              className="contact__link"
+            >
               https://emilywongg.itch.io/pixel-run
-            </h5>
+            </a>
 
-            <h5 className="contact__link">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/emily-pyw-wong/"
+              className="contact__link"
+            >
               https://www.linkedin.com/in/emily-pyw-wong/
-            </h5>
-            <h5 className="contact__link">https://github.com/emwong101</h5>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/emwong101"
+              className="contact__link"
+            >
+              https://github.com/emwong101
+            </a>
           </div>
         </div>
       </motion.div>
