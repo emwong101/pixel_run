@@ -3,8 +3,7 @@
 
 An endless runner inspired by retro browser games.
 
-
-![GameStart (1)](https://user-images.githubusercontent.com/110256938/209281197-285c397e-cf25-434a-a46c-419caaf4483d.png)
+![pixil-gif-drawing](https://user-images.githubusercontent.com/110256938/209287149-48f4ae11-5cbe-4e17-a524-9a263c671164.gif)
 
 ### Please note this repo contains the react app hosting the game. Click [here](https://github.com/emwong101/pixel_run_game) to access the game codebase.
 
