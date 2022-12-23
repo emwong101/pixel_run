@@ -3,9 +3,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -1rem;
+  margin: 1rem 2rem;
 }
 
-.game {
-  margin-top: -0.6rem;
+.iframe__container {
+  aspect-ratio: 47/32;
+  width: 100%;
+  max-width: 57rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #c9c9c9;
+  border-top: none;
+}
+
+.game-frame {
+  height: 100%;
+  width: 100%;
+  border: none;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  display: block;
 }

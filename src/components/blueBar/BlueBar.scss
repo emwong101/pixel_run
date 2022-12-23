@@ -9,9 +9,10 @@
   align-items: center;
 
   &__game {
-    width: 960px;
+    max-width: 57.25rem;
     z-index: 999;
     height: 1.5rem;
+    border-bottom: 1px solid #c9c9c9;
   }
 }
 

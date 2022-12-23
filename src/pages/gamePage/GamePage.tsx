@@ -11,20 +11,17 @@ function GamePage() {
       transition={{ type: "spring", delay: 0.5 }}
       exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
     >
-      <BlueBar
-        classes="blue-bar__game"
-        close="close__game"
-        icon="close__icon--game"
-      />
-      <iframe
-        src="https://itch.io/embed-upload/6992900?color=c0c0c0"
-        width="960"
-        height="680"
-      >
-        <a href="https://emilywongg.itch.io/pixel-run">
-          Play Pixel Run on itch.io
-        </a>
-      </iframe>
+      <div className="iframe__container">
+        <BlueBar
+          classes="blue-bar__game"
+          close="close__game"
+          icon="close__icon--game"
+        />
+        <iframe
+          className="game-frame"
+          src="https://pixelrun-5a3ce.web.app/"
+        ></iframe>
+      </div>
     </motion.div>
   );
 }
