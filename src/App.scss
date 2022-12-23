@@ -1,17 +1,19 @@
+@use "./partials/breakpoints" as breakpoints;
+
 html,
 body {
   margin: 0;
   line-height: 1.8rem;
   height: 100vh;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   background-color: #5f6b82;
-  background-image: url("/assets/hero.gif");
-  background-repeat: no-repeat;
+  background-image: url("backgroundMobile.gif");
+  background-position: right;
   background-size: cover;
+  overflow-x: hidden;
   position: relative;
   background-attachment: fixed;
-  overflow: hidden;
 }
 
 *,
@@ -22,17 +24,17 @@ body {
 }
 
 .header {
-  width: 100%;
-  padding: 1rem 30rem;
-  padding-right: 14rem;
-  padding-bottom: 0;
-  position: sticky;
+  padding: 2rem 2rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  position: static;
   top: 0;
   z-index: 111;
 
   &-container {
     display: flex;
-    padding-right: 5rem;
+    padding: 0;
+    flex-direction: column;
     width: 100%;
     height: fit-content;
   }
@@ -41,7 +43,8 @@ body {
 .link-button {
   height: 3rem;
   width: 10rem;
-  margin-top: 4rem;
+  margin: 0;
+  margin-left: 2rem;
   box-shadow: 2px 1px 0px 2px rgba(0, 0, 0, 1);
   background-color: #c0c0c0;
   text-decoration: none;
@@ -71,10 +74,9 @@ body {
 }
 
 .phone__icon {
-  width: 48px;
+  width: 3rem;
   height: fit-content;
-  margin-right: 2rem;
-  margin-top: 4rem;
+  margin: 0;
   padding: 0.75rem;
   box-shadow: 2px 1px 0px 2px rgba(0, 0, 0, 1);
   background-color: #c0c0c0;
@@ -90,4 +92,100 @@ body {
 
 .button-container {
   display: flex;
+  justify-content: center;
+}
+
+@include breakpoints.tablet {
+  .header {
+    padding: 2rem 2rem;
+    padding-bottom: 0;
+    z-index: 111;
+    width: 60%;
+
+    &-container {
+      flex-direction: row;
+      padding: 0;
+      justify-content: center;
+      align-items: baseline;
+      position: relative;
+    }
+  }
+
+  .button-container {
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    flex: 0;
+  }
+
+  .link-button {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .button__text {
+    padding: 0;
+  }
+  .phone__icon {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@include breakpoints.desktop {
+  html,
+  body {
+    background-image: url("hero.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    background-attachment: fixed;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .header {
+    min-width: 45rem;
+    max-width: 75rem;
+    padding: 0 20rem;
+    padding-right: 5rem;
+    margin: 1rem 2rem 0 2rem;
+    position: relative;
+    flex: 1 1 0;
+  }
+
+  .button-container {
+    position: static;
+  }
+
+  .link-button {
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    flex: 1 1 0;
+  }
+  .button__text {
+    padding: 0;
+  }
+  .phone__icon {
+    margin: 0;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    height: 3rem;
+    width: 3rem;
+    flex: 1 1 0;
+  }
 }

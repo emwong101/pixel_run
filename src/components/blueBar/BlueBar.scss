@@ -1,3 +1,5 @@
+@use "../../partials/breakpoints" as breakpoints;
+
 .blue-bar {
   background-color: #0200a1;
   width: 100%;
@@ -7,17 +9,18 @@
   align-items: center;
 
   &__game {
-    width: 960px;
+    max-width: 57.25rem;
     z-index: 999;
     height: 1.5rem;
+    border-bottom: 1px solid #c9c9c9;
   }
 }
 
 .close {
   background-color: #c0c0c0;
   color: #515151;
-  height: 22px;
-  width: 23px;
+  height: 1.5rem;
+  width: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,4 +50,24 @@
   padding-left: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 12px;
+}
+
+@include breakpoints.mobile {
+  .blue-bar {
+    height: 1.5rem;
+  }
+
+  .close {
+    width: 1rem;
+    height: 1rem;
+
+    &__icon {
+      width: 1rem;
+    }
+  }
+
+  .bar__label {
+    font-size: 10px;
+    padding-left: 0.5rem;
+  }
 }

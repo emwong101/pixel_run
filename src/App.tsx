@@ -16,24 +16,27 @@ function App() {
   };
   return (
     <>
-      <div className="header-container" onClick={handleClick}>
+      <div className="header-container">
         <img src="assets/title.png" alt="title" className="header" />
         <div className="button-container">
-          <Link to="/contact">
+          <Link to="/pixel_run/contact">
             <img
               src="assets/phone-solid.svg"
               className="phone__icon"
               alt="phone"
             />
           </Link>
-          <Link className="link" to={location.pathname === "/" ? "/play" : ""}>
+          <Link
+            className="link"
+            to={location.pathname === "/pixel_run/" ? "/pixel_run/play" : ""}
+          >
             <motion.button
               className="link-button"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
               <p className="button__text">
-                {location.pathname === "/" ? "PLAY" : "HOME"}
+                {location.pathname === "/pixel_run/" ? "PLAY" : "HOME"}
               </p>
             </motion.button>
           </Link>
@@ -42,10 +45,10 @@ function App() {
       <div>
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
-            {active && <Route path="/" element={<InfoPage />} />}
-            <Route path="/play" element={<GamePage />} />
-            <Route path="/pixel_run" element={<Navigate to="/" />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/pixel_run" element={<InfoPage />} />
+            <Route path="/" element={<Navigate to="/pixel_run/" />} />
+            <Route path="/pixel_run/play" element={<GamePage />} />
+            <Route path="/pixel_run/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>
       </div>
